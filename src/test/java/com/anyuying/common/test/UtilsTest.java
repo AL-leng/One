@@ -54,6 +54,6 @@ public class UtilsTest {
   //StringUtils03
   @Test
   public void StringUtils03() throws UnsupportedEncodingException {
-    System.out.println(StringUtil.randomChineseString());
+    System.out.println(StringUtil.randomChineseString(3));
   }
 }

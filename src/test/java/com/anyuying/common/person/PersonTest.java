@@ -20,8 +20,8 @@ public class PersonTest {
   @Test
   public void pt() throws UnsupportedEncodingException {
     for (int i = 0; i < 10000; i++) {
-      Person ps = new Person(RandomUtil.random(1, 2000), StringUtil.generateChineseName(),
-        RandomUtil.random(1, 120), StringUtil.randomChineseString(), new Date());
+      Person ps = new Person(RandomUtil.random(1, 2000), StringUtil.getRandomChineseName(),
+        RandomUtil.random(1, 120), StringUtil.randomChineseString(100), new Date());
       System.out.println(ps);
     }
   }
